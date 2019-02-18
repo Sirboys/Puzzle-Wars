@@ -1,0 +1,27 @@
+{
+    "__comment": "Made by JustKirill",
+    "display": {
+        "title": {
+            "text": "Shuffle puzzles",
+            "color": "dark_purple"
+        },
+        "description": {
+            "text": "Want some shuffling? ;D",
+            "color": "red"
+        },
+        "icon": {
+            "item": "minecraft:chorus_fruit"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+	
+    "criteria": {
+        "1": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "pw:buycr"
+}

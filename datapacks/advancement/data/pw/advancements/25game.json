@@ -1,0 +1,30 @@
+{
+    "__comment": "Made by JustKirill",
+    "display": {
+        "title": {
+            "text": "Play 25 games",
+            "color": "blue"
+        },
+        "description": {
+            "text": "I LOVE THIS GAME!",
+            "color": "red"
+        },
+        "icon": {
+            "item": "minecraft:redstone"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+	
+	"rewards": {
+        "function": "puzzlewars:advrewards/500"
+    },	
+    "criteria": {
+        "1": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "pw:10game"
+}

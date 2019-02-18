@@ -1,0 +1,26 @@
+{
+    "__comment": "Made by JustKirill",
+    "display": {
+        "title": {
+            "text": "Buy 4th health recovery",
+            "color": "dark_purple"
+        },
+        "description": {
+            "text": "It is the best thing ever!",
+            "color": "light_purple"
+        },
+        "icon": {
+            "item": "minecraft:enchanted_golden_apple"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "1": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "pw:buy3r"
+}

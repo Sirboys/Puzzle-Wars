@@ -1,0 +1,26 @@
+{
+    "__comment": "Made by JustKirill",
+    "display": {
+        "title": {
+            "text": "Buy 1st health up",
+            "color": "dark_red"
+        },
+        "description": {
+            "text": "Oh, 16 HP. It is good.",
+            "color": "red"
+        },
+        "icon": {
+            "item": "minecraft:golden_apple"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "1": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "pw:root"
+}

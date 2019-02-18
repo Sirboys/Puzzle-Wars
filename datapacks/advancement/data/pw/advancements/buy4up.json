@@ -1,0 +1,27 @@
+{
+    "__comment": "Made by JustKirill",
+    "display": {
+        "title": {
+            "text": "Buy 4th health up",
+            "color": "dark_red"
+        },
+        "description": {
+            "text": "Better than diamond armor",
+            "color": "red"
+        },
+        "icon": {
+            "item": "minecraft:golden_apple"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+	
+    "criteria": {
+        "1": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "pw:buy3up"
+}

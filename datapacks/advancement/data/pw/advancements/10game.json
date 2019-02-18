@@ -1,0 +1,30 @@
+{
+    "__comment": "Made by JustKirill",
+    "display": {
+        "title": {
+            "text": "Play 10 games",
+            "color": "blue"
+        },
+        "description": {
+            "text": "Puzzles are amazing!",
+            "color": "aqua"
+        },
+        "icon": {
+            "item": "minecraft:gold_ingot"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+	
+	"rewards": {
+        "function": "puzzlewars:advrewards/200"
+    },	
+    "criteria": {
+        "1": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "pw:5game"
+}

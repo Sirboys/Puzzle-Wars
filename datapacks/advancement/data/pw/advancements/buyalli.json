@@ -1,0 +1,27 @@
+{
+    "__comment": "Made by JustKirill",
+    "display": {
+        "title": {
+            "text": "Buy ALL islands",
+            "color": "dark_gray"
+        },
+        "description": {
+            "text": "GOTCHA!",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:sandstone"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+	
+    "criteria": {
+        "1": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "pw:buy10i"
+}

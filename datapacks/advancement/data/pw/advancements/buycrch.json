@@ -1,0 +1,29 @@
+{
+    "__comment": "Made by JustKirill",
+    "display": {
+        "title": {
+            "text": "Change random picture",
+            "color": "gray"
+        },
+        "description": {
+            "text": "AHAHHAHAH! I will change their pictures!",
+            "color": "dark_red",
+            "bold": true
+        },
+        "icon": {
+            "item": "minecraft:painting"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+	
+	
+    "criteria": {
+        "1": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "pw:buycr"
+}

@@ -1,0 +1,33 @@
+{
+    "__comment": "Made by JustKirill",
+    "display": {
+        "title": {
+            "text": "Hidden parkour completed",
+            "color": "gray",
+            "bold": true,
+            "obfuscated": false
+        },
+        "description": {
+            "text": "Parkour on puzzle map ¯\\_(ツ)_/¯",
+            "color": "dark_blue",
+            "bold": true
+        },
+        "icon": {
+            "item": "minecraft:sea_lantern"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+	
+	"rewards": {
+        "function": "puzzlewars:advrewards/100"
+    },	
+    "criteria": {
+        "1": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "pw:fall"
+}

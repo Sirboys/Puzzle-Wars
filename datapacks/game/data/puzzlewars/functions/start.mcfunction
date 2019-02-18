@@ -1,0 +1,6 @@
+scoreboard players set testGame puzzleSettings 0
+execute if score Players: SCOREBORD matches 0..1 if score Round puzzleSettings matches -1 run tellraw @s ["",{"text":"["},{"text":"Puzzle Wars","color":"dark_purple"},{"text":"] "},{"text":"Two or more players required!","color":"gold"}]
+execute if score Players: SCOREBORD matches 0..1 if score Round puzzleSettings matches -1 run tellraw @s [{"text":"["},{"text":"Puzzle Wars","color":"dark_purple"},{"text":"]"},{"text":" Click here to enter ","color":"gold"},{"text":"[SINGLEPLAYER]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger solo set 1"}}]
+execute if score Players: SCOREBORD matches 9.. if score Round puzzleSettings matches -1 run tellraw @a ["",{"text":"[","color":"white"},{"text":"Puzzle Wars","color":"dark_purple"},{"text":"] ","color":"white"},{"text":"The game started, but not all players were allowed to play","color":"gold"}]
+execute unless score Round puzzleSettings matches -1 run tellraw @s ["",{"text":"[","color":"white"},{"text":"Puzzle Wars","color":"dark_purple"},{"text":"] ","color":"white"},{"text":"Game is already started!","color":"gold"}]
+execute if score Players: SCOREBORD matches 2.. if score Round puzzleSettings matches -1 run function puzzlewars:continestart
