@@ -22,7 +22,7 @@ execute if score GameTime timer matches 26 as @a[tag=InGame] run gamemode advent
 execute if score GameTime timer matches 26 run tp @a[team=yellow] 975.0 102 978.0 -180 0
 execute if score GameTime timer matches 26 run tp @a[team=white] 992.0 102 978.0 -180 0
 execute if score GameTime timer matches 26 run tp @a[team=black] 1009.0 102 978.0 -180 0
-execute if score GameTime timer matches 26 run tp @a[team=pink] 106.0 102 978.0 -180 0
+execute if score GameTime timer matches 26 run tp @a[team=pink] 1026.0 102 978.0 -180 0
 
 execute if score GameTime timer matches 26 run tp @a[team=green] 1026.0 102 1023.0 0 0
 execute if score GameTime timer matches 26 run tp @a[team=red] 1009.0 102 1023.0 0 0
