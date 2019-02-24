@@ -27,15 +27,15 @@ function puzzlewars:setcustomframes
 
 tellraw @a ["",{"text":"[","color":"white"},{"text":"Puzzle Wars","color":"dark_purple"},{"text":"] ","color":"white"},{"text":"Game started!","color":"gold"}]
 
-tp @a[team=yellow] 975.0 102 978.0 -180 0
-tp @a[team=white] 992.0 102 978.0 -180 0
-tp @a[team=black] 1009.0 102 978.0 -180 0
-tp @a[team=pink] 1026.0 102 978.0 -180 0
+tp @a[team=yellow] 976.0 102 979.0 -180 0
+tp @a[team=white] 993.0 102 979.0 -180 0
+tp @a[team=black] 1009.0 102 979.0 -180 0
+tp @a[team=pink] 1026.0 102 979.0 -180 0
 
 tp @a[team=green] 1026.0 102 1023.0 0 0
 tp @a[team=red] 1009.0 102 1023.0 0 0
-tp @a[team=blue] 992.0 102 1023.0 0 0
-tp @a[team=gray] 975.0 102 1023.0 0 0
+tp @a[team=blue] 993.0 102 1023.0 0 0
+tp @a[team=gray] 976.0 102 1023.0 0 0
 
 scoreboard players set GameTime timer -1
 scoreboard objectives remove Lives

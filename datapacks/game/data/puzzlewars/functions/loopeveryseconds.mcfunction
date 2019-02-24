@@ -19,15 +19,15 @@ execute if score GameTime timer matches 23 as @a[tag=InGame] run title @s title 
 execute if score GameTime timer matches 23 as @a[tag=InGame] run tellraw @s ["",{"text":"["},{"text":"Puzzle Wars","color":"dark_purple"},{"text":"] "},{"text":"You assembled:","bold":false,"color":"gold"},{"text":" ","color":"gold"},{"score":{"name":"@s","objective":"calcScore"},"color":"green"},{"text":"/16","color":"green"}]
 execute if score GameTime timer matches 23 as @a[tag=InGame] run gamemode spectator @s
 execute if score GameTime timer matches 26 as @a[tag=InGame] run gamemode adventure @s
-execute if score GameTime timer matches 26 run tp @a[team=yellow] 975.0 102 978.0 -180 0
-execute if score GameTime timer matches 26 run tp @a[team=white] 992.0 102 978.0 -180 0
-execute if score GameTime timer matches 26 run tp @a[team=black] 1009.0 102 978.0 -180 0
-execute if score GameTime timer matches 26 run tp @a[team=pink] 1026.0 102 978.0 -180 0
+execute if score GameTime timer matches 26 run tp @a[team=yellow] 976.0 102 979.0 -180 0
+execute if score GameTime timer matches 26 run tp @a[team=white] 993.0 102 979.0 -180 0
+execute if score GameTime timer matches 26 run tp @a[team=black] 1009.0 102 979.0 -180 0
+execute if score GameTime timer matches 26 run tp @a[team=pink] 1026.0 102 979.0 -180 0
 
 execute if score GameTime timer matches 26 run tp @a[team=green] 1026.0 102 1023.0 0 0
 execute if score GameTime timer matches 26 run tp @a[team=red] 1009.0 102 1023.0 0 0
-execute if score GameTime timer matches 26 run tp @a[team=blue] 992.0 102 1023.0 0 0
-execute if score GameTime timer matches 26 run tp @a[team=gray] 975.0 102 1023.0 0 0
+execute if score GameTime timer matches 26 run tp @a[team=blue] 993.0 102 1023.0 0 0
+execute if score GameTime timer matches 26 run tp @a[team=gray] 976.0 102 1023.0 0 0
 
 execute if score GameTime timer matches 26 as @a[team=red] store result score @s kickCalc run scoreboard players get @s calcScore
 execute if score GameTime timer matches 26 as @a[team=blue] store result score @s kickCalc run scoreboard players get @s calcScore
