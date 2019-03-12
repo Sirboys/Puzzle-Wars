@@ -7,4 +7,4 @@ By default, when the game starts, all players will get 15 lives. for every mista
 
 Buy upgrades in the Ender Chest at the opposite side of the lobby.
 
-![Puzzle Wars icon](https://raw.githubusercontent.com/azerus-team/Puzzle-Wars/master/icon.png)
+![Puzzle Wars icon](https://stickypiston.co/wp-content/uploads/puzzlewars.jpg)
