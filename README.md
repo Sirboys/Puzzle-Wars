@@ -1,8 +1,9 @@
 Puzzle Wars
 =====================
 
-<a href="https://discord.gg/NsEdnWD">![Discord](https://discordapp.com/api/guilds/331053412831723521/embed.png)</a> <a href="https://github.com/azerus-team/Puzzle-Wars/releases/latest">![Latest release](https://img.shields.io/github/release/azerus-team/Puzzle-Wars.svg?label=latest%20release)</a>
 
+<a href="https://discord.gg/NsEdnWD"><img src="https://discordapp.com/api/guilds/331053412831723521/embed.png" height="24px"></a>
+<a href="https://github.com/azerus-team/Puzzle-Wars/releases/latest"><img src="https://img.shields.io/github/release/azerus-team/Puzzle-Wars.svg?label=latest%20release" height="24px"></a>
 
 ### **Description**
 
