@@ -1,6 +1,6 @@
 # Puzzle-Wars
 
-[[https://img.shields.io/github/downloads/azerus-team/Puzzle-Wars/total.svg?color=%2032cd32&style=popout|alt=octocat]]
+![https://discord.gg/NsEdnWD](https://discordapp.com/api/guilds/331053412831723521/embed.png) ![https://github.com/azerus-team/Puzzle-Wars/releases/latest](https://img.shields.io/github/release/azerus-team/Puzzle-Wars.svg?label=latest%20release) ![https://github.com/azerus-team/Puzzle-Wars/releases/latest](https://img.shields.io/github/downloads/azerus-team/Puzzle-Wars/total.svg?color=%2032cd32&style=popout|alt=Download)
 
 Minecraft map
 
