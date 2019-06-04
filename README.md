@@ -1,5 +1,7 @@
 # Puzzle-Wars
-(https://img.shields.io/github/downloads/azerus-team/Puzzle-Wars/total.svg?color=%2032cd32&style=popout)
+
+[[https://img.shields.io/github/downloads/azerus-team/Puzzle-Wars/total.svg?color=%2032cd32&style=popout|alt=octocat]]
+
 Minecraft map
 
 In this map, you will solve puzzles by rotating parts of pictures into the correct position. You will compete with other players.
