@@ -1,12 +1,12 @@
-execute if entity @a[team=red] run summon minecraft:armor_stand 1010.5 105.5 1025.5 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,Marker:1b,CustomName:"{\"text\":\"calcRed\"}"}
-execute if entity @a[team=blue] run summon minecraft:armor_stand 994.5 105.5 1025.5 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,Marker:1b,CustomName:"{\"text\":\"calcBlue\"}"}
-execute if entity @a[team=green] run summon minecraft:armor_stand 1027.5 105.5 1025.5 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,Marker:1b,CustomName:"{\"text\":\"calcGreen\"}"}
-execute if entity @a[team=gray] run summon minecraft:armor_stand 977.5 105.5 1025.5 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,Marker:1b,CustomName:"{\"text\":\"calcGray\"}"}
+execute if entity @a[team=red] run summon minecraft:armor_stand 1010.5 105.5 1025.5 {Silent:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,Marker:1b,CustomName:"{\"text\":\"calcRed\"}"}
+execute if entity @a[team=blue] run summon minecraft:armor_stand 994.5 105.5 1025.5 {Silent:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,Marker:1b,CustomName:"{\"text\":\"calcBlue\"}"}
+execute if entity @a[team=green] run summon minecraft:armor_stand 1027.5 105.5 1025.5 {Silent:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,Marker:1b,CustomName:"{\"text\":\"calcGreen\"}"}
+execute if entity @a[team=gray] run summon minecraft:armor_stand 977.5 105.5 1025.5 {Silent:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,Marker:1b,CustomName:"{\"text\":\"calcGray\"}"}
 
-execute if entity @a[team=yellow] run summon minecraft:armor_stand 974.5 105.5 976.5 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,Marker:1b,CustomName:"{\"text\":\"calcYellow\"}"}
-execute if entity @a[team=white] run summon minecraft:armor_stand 991.5 105.5 976.5 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,Marker:1b,CustomName:"{\"text\":\"calcWhite\"}"}
-execute if entity @a[team=black] run summon minecraft:armor_stand 1007.5 105.5 976.5 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,Marker:1b,CustomName:"{\"text\":\"calcBlack\"}"}
-execute if entity @a[team=pink] run summon minecraft:armor_stand 1024.5 105.5 976.5 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,Marker:1b,CustomName:"{\"text\":\"calcPink\"}"}
+execute if entity @a[team=yellow] run summon minecraft:armor_stand 974.5 105.5 976.5 {Silent:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,Marker:1b,CustomName:"{\"text\":\"calcYellow\"}"}
+execute if entity @a[team=white] run summon minecraft:armor_stand 991.5 105.5 976.5 {Silent:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,Marker:1b,CustomName:"{\"text\":\"calcWhite\"}"}
+execute if entity @a[team=black] run summon minecraft:armor_stand 1007.5 105.5 976.5 {Silent:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,Marker:1b,CustomName:"{\"text\":\"calcBlack\"}"}
+execute if entity @a[team=pink] run summon minecraft:armor_stand 1024.5 105.5 976.5 {Silent:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,Marker:1b,CustomName:"{\"text\":\"calcPink\"}"}
 
 scoreboard players set @a calcScore 0
 
