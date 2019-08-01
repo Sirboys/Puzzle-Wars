@@ -1,0 +1,63 @@
+
+execute as @s unless entity @s[scores={Frames=0}] run replaceitem entity @s enderchest.0 stick{fr:0b,display:{Name:"[\"\",{\"text\":\"Default \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(Click to select)\"}]","Lore":['{"text":"§7Always unlocked"}']}} 1
+execute as @s unless entity @s[scores={Frames=1}] run replaceitem entity @s[tag=fr_2] enderchest.1 redstone{fr:1b,display:{Name:"[\"\",{\"text\":\"Redstone \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(Click to select)\"}]","Lore":['{"text":"§7Built by §aSirboys"}']}} 1
+execute as @s unless entity @s[scores={Frames=2}] run replaceitem entity @s[tag=fr_3] enderchest.2 water_bucket{fr:2b,display:{Name:"[\"\",{\"text\":\"Underwater \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(Click to select)\"}]","Lore":['{"text":"§7Built by §aBrandShei"}']}} 1
+execute as @s unless entity @s[scores={Frames=3}] run replaceitem entity @s[tag=fr_4] enderchest.3 nether_brick{fr:3b,display:{Name:"[\"\",{\"text\":\"Nether \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(Click to select)\"}]","Lore":['{"text":"§7Built by §aBrandShei"}']}} 1
+execute as @s unless entity @s[scores={Frames=4}] run replaceitem entity @s[tag=fr_5] enderchest.4 quartz{fr:4b,display:{Name:"[\"\",{\"text\":\"Technology \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(Click to select)\"}]","Lore":['{"text":"§7Built by §aBrandShei"}']}} 1
+execute as @s unless entity @s[scores={Frames=5}] run replaceitem entity @s[tag=fr_6] enderchest.5 wheat{fr:5b,display:{Name:"[\"\",{\"text\":\"Hay Stack \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(Click to select)\"}]","Lore":['{"text":"§7Built by §aBrandShei"}']}} 1
+execute as @s unless entity @s[scores={Frames=6}] run replaceitem entity @s[tag=fr_7] enderchest.6 coal{fr:6b,display:{Name:"[\"\",{\"text\":\"Demon \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(Click to select)\"}]","Lore":['{"text":"§7Built by §aBrandShei"}']}} 1
+execute as @s unless entity @s[scores={Frames=7}] run replaceitem entity @s[tag=fr_8] enderchest.7 popped_chorus_fruit{fr:7b,display:{Name:"[\"\",{\"text\":\"End \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(Click to select)\"}]","Lore":['{"text":"§7Built by §aBrandShei"}']}} 1
+replaceitem entity @s[tag=!fr_2] enderchest.1 charcoal{display:{Name:"[\"\",{\"text\":\"Redstone \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(§cLocked§7)\"}]","Lore":['{"text":"§7Built by §aSirboys"}']}} 1
+replaceitem entity @s[tag=!fr_3] enderchest.2 charcoal{display:{Name:"[\"\",{\"text\":\"Underwater \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(§cLocked§7)\"}]","Lore":['{"text":"§7Built by §aBrandShei"}']}} 1
+replaceitem entity @s[tag=!fr_4] enderchest.3 charcoal{display:{Name:"[\"\",{\"text\":\"Nether \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(§cLocked§7)\"}]","Lore":['{"text":"§7Built by §aBrandShei"}']}} 1
+replaceitem entity @s[tag=!fr_5] enderchest.4 charcoal{display:{Name:"[\"\",{\"text\":\"Technology \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(§cLocked§7)\"}]","Lore":['{"text":"§7Built by §aBrandShei"}']}} 1
+replaceitem entity @s[tag=!fr_6] enderchest.5 charcoal{display:{Name:"[\"\",{\"text\":\"Hay Stack \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(§cLocked§7)\"}]","Lore":['{"text":"§7Built by §aBrandShei"}']}} 1
+replaceitem entity @s[tag=!fr_7] enderchest.6 charcoal{display:{Name:"[\"\",{\"text\":\"Demon \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(§cLocked§7)\"}]","Lore":['{"text":"§7Built by §aBrandShei"}']}} 1
+replaceitem entity @s[tag=!fr_8] enderchest.7 charcoal{display:{Name:"[\"\",{\"text\":\"End \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(§cLocked§7)\"}]","Lore":['{"text":"§7Built by §aBrandShei"}']}} 1
+replaceitem entity @s[scores={Frames=0}] enderchest.0 stick{fr:0b,HideFlags:1,display:{Name:"[\"\",{\"text\":\"Default \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(§aSelected§7)\"}]","Lore":['{"text":"§7Always unlocked"}']},"Enchantments":[{"id":"minecraft:protection","lvl":1}]} 1
+replaceitem entity @s[tag=fr_2,scores={Frames=1}] enderchest.1 redstone{fr:1b,HideFlags:1,display:{Name:"[\"\",{\"text\":\"Redstone \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(§aSelected§7)\"}]","Lore":['{"text":"§7Built by §aSirboys"}']},"Enchantments":[{"id":"minecraft:protection","lvl":1}]} 1
+replaceitem entity @s[tag=fr_3,scores={Frames=2}] enderchest.2 water_bucket{fr:2b,HideFlags:1,display:{Name:"[\"\",{\"text\":\"Underwater \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(§aSelected§7)\"}]","Lore":['{"text":"§7Built by §aBrandShei"}']},"Enchantments":[{"id":"minecraft:protection","lvl":1}]} 1
+replaceitem entity @s[tag=fr_4,scores={Frames=3}] enderchest.3 nether_brick{fr:3b,HideFlags:1,display:{Name:"[\"\",{\"text\":\"Nether \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(§aSelected§7)\"}]","Lore":['{"text":"§7Built by §aBrandShei"}']},"Enchantments":[{"id":"minecraft:protection","lvl":1}]} 1
+replaceitem entity @s[tag=fr_5,scores={Frames=4}] enderchest.4 quartz{fr:4b,HideFlags:1,display:{Name:"[\"\",{\"text\":\"Technology \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(§aSelected§7)\"}]","Lore":['{"text":"§7Built by §aBrandShei"}']},"Enchantments":[{"id":"minecraft:protection","lvl":1}]} 1
+replaceitem entity @s[tag=fr_6,scores={Frames=5}] enderchest.5 wheat{fr:5b,HideFlags:1,display:{Name:"[\"\",{\"text\":\"Hay Stack \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(§aSelected§7)\"}]","Lore":['{"text":"§7Built by §aBrandShei"}']},"Enchantments":[{"id":"minecraft:protection","lvl":1}]} 1
+replaceitem entity @s[tag=fr_7,scores={Frames=6}] enderchest.6 coal{fr:6b,HideFlags:1,display:{Name:"[\"\",{\"text\":\"Demon \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(§aSelected§7)\"}]","Lore":['{"text":"§7Built by §aBrandShei"}']},"Enchantments":[{"id":"minecraft:protection","lvl":1}]} 1
+replaceitem entity @s[tag=fr_8,scores={Frames=7}] enderchest.7 popped_chorus_fruit{fr:7b,HideFlags:1,display:{Name:"[\"\",{\"text\":\"End \",\"italic\":false,\"color\":\"gold\",\"bold\":true},{\"text\":\"§7(§aSelected§7)\"}]","Lore":['{"text":"§7Built by §aBrandShei"}']},"Enchantments":[{"id":"minecraft:protection","lvl":1}]} 1
+
+replaceitem entity @s enderchest.8 air 1
+replaceitem entity @s enderchest.9 ender_eye{view:0b,display:{Name:"{\"text\":\"Take a view\",\"italic\":false,\"color\":\"light_purple\",\"bold\":false}"}} 1
+replaceitem entity @s enderchest.10 ender_eye{view:1b,display:{Name:"{\"text\":\"Take a view\",\"italic\":false,\"color\":\"light_purple\",\"bold\":false}"}} 1
+replaceitem entity @s enderchest.11 ender_eye{view:2b,display:{Name:"{\"text\":\"Take a view\",\"italic\":false,\"color\":\"light_purple\",\"bold\":false}"}} 1
+replaceitem entity @s enderchest.12 ender_eye{view:3b,display:{Name:"{\"text\":\"Take a view\",\"italic\":false,\"color\":\"light_purple\",\"bold\":false}"}} 1
+replaceitem entity @s enderchest.13 ender_eye{view:4b,display:{Name:"{\"text\":\"Take a view\",\"italic\":false,\"color\":\"light_purple\",\"bold\":false}"}} 1
+replaceitem entity @s enderchest.14 ender_eye{view:5b,display:{Name:"{\"text\":\"Take a view\",\"italic\":false,\"color\":\"light_purple\",\"bold\":false}"}} 1
+replaceitem entity @s enderchest.15 ender_eye{view:6b,display:{Name:"{\"text\":\"Take a view\",\"italic\":false,\"color\":\"light_purple\",\"bold\":false}"}} 1
+replaceitem entity @s enderchest.16 ender_eye{view:7b,display:{Name:"{\"text\":\"Take a view\",\"italic\":false,\"color\":\"light_purple\",\"bold\":false}"}} 1
+replaceitem entity @s enderchest.17 arrow{page:1b,HideFlags:1,display:{Name:"{\"text\":\"Next page\",\"italic\":false,\"color\":\"white\",\"bold\":false}"},"Enchantments":[{"id":"minecraft:protection","lvl":1}]} 1
+replaceitem entity @s enderchest.18 lime_stained_glass_pane{display:{Name:"{\"text\":\"Default\",\"italic\":false,\"color\":\"green\",\"bold\":false}"}} 1
+
+replaceitem entity @s[tag=!fr_2] enderchest.19 minecraft:red_stained_glass_pane{empty:1b,display:{Name:"{\"text\":\"You don't have enough coins\",\"italic\":false,\"color\":\"red\"}","Lore":['{"text":"§6100 Coins"}']}} 1
+replaceitem entity @s[tag=!fr_3] enderchest.20 minecraft:red_stained_glass_pane{empty:2b,display:{Name:"{\"text\":\"You don't have enough coins\",\"italic\":false,\"color\":\"red\"}","Lore":['{"text":"§6100 Coins"}']}} 1
+replaceitem entity @s[tag=!fr_4] enderchest.21 minecraft:red_stained_glass_pane{empty:3b,display:{Name:"{\"text\":\"You don't have enough coins\",\"italic\":false,\"color\":\"red\"}","Lore":['{"text":"§6100 Coins"}']}} 1
+replaceitem entity @s[tag=!fr_5] enderchest.22 minecraft:red_stained_glass_pane{empty:4b,display:{Name:"{\"text\":\"You don't have enough coins\",\"italic\":false,\"color\":\"red\"}","Lore":['{"text":"§6100 Coins"}']}} 1
+replaceitem entity @s[tag=!fr_6] enderchest.23 minecraft:red_stained_glass_pane{empty:5b,display:{Name:"{\"text\":\"You don't have enough coins\",\"italic\":false,\"color\":\"red\"}","Lore":['{"text":"§6100 Coins"}']}} 1
+replaceitem entity @s[tag=!fr_7] enderchest.24 minecraft:red_stained_glass_pane{empty:6b,display:{Name:"{\"text\":\"You don't have enough coins\",\"italic\":false,\"color\":\"red\"}","Lore":['{"text":"§6100 Coins"}']}} 1
+replaceitem entity @s[tag=!fr_8] enderchest.25 minecraft:red_stained_glass_pane{empty:7b,display:{Name:"{\"text\":\"You don't have enough coins\",\"italic\":false,\"color\":\"red\"}","Lore":['{"text":"§6100 Coins"}']}} 1
+replaceitem entity @s[tag=!fr_2,scores={Coins=100..}] enderchest.19 minecraft:orange_stained_glass_pane{frb:1b,display:{Name:"{\"text\":\"Buy\",\"italic\":false,\"color\":\"gold\"}","Lore":['{"text":"§6100 Coins"}']}} 1
+replaceitem entity @s[tag=!fr_3,scores={Coins=100..}] enderchest.20 minecraft:orange_stained_glass_pane{frb:2b,display:{Name:"{\"text\":\"Buy\",\"italic\":false,\"color\":\"gold\"}","Lore":['{"text":"§6100 Coins"}']}} 1
+replaceitem entity @s[tag=!fr_4,scores={Coins=100..}] enderchest.21 minecraft:orange_stained_glass_pane{frb:3b,display:{Name:"{\"text\":\"Buy\",\"italic\":false,\"color\":\"gold\"}","Lore":['{"text":"§6100 Coins"}']}} 1
+replaceitem entity @s[tag=!fr_5,scores={Coins=100..}] enderchest.22 minecraft:orange_stained_glass_pane{frb:4b,display:{Name:"{\"text\":\"Buy\",\"italic\":false,\"color\":\"gold\"}","Lore":['{"text":"§6100 Coins"}']}} 1
+replaceitem entity @s[tag=!fr_6,scores={Coins=100..}] enderchest.23 minecraft:orange_stained_glass_pane{frb:5b,display:{Name:"{\"text\":\"Buy\",\"italic\":false,\"color\":\"gold\"}","Lore":['{"text":"§6100 Coins"}']}} 1
+replaceitem entity @s[tag=!fr_7,scores={Coins=100..}] enderchest.24 minecraft:orange_stained_glass_pane{frb:6b,display:{Name:"{\"text\":\"Buy\",\"italic\":false,\"color\":\"gold\"}","Lore":['{"text":"§6100 Coins"}']}} 1
+replaceitem entity @s[tag=!fr_8,scores={Coins=100..}] enderchest.25 minecraft:orange_stained_glass_pane{frb:7b,display:{Name:"{\"text\":\"Buy\",\"italic\":false,\"color\":\"gold\"}","Lore":['{"text":"§6100 Coins"}']}} 1
+replaceitem entity @s[tag=fr_2] enderchest.19 minecraft:lime_stained_glass_pane{display:{Name:"{\"text\":\"Purchased\",\"italic\":false,\"color\":\"green\"}"}} 1
+replaceitem entity @s[tag=fr_3] enderchest.20 minecraft:lime_stained_glass_pane{display:{Name:"{\"text\":\"Purchased\",\"italic\":false,\"color\":\"green\"}"}} 1
+replaceitem entity @s[tag=fr_4] enderchest.21 minecraft:lime_stained_glass_pane{display:{Name:"{\"text\":\"Purchased\",\"italic\":false,\"color\":\"green\"}"}} 1
+replaceitem entity @s[tag=fr_5] enderchest.22 minecraft:lime_stained_glass_pane{display:{Name:"{\"text\":\"Purchased\",\"italic\":false,\"color\":\"green\"}"}} 1
+replaceitem entity @s[tag=fr_6] enderchest.23 minecraft:lime_stained_glass_pane{display:{Name:"{\"text\":\"Purchased\",\"italic\":false,\"color\":\"green\"}"}} 1
+replaceitem entity @s[tag=fr_7] enderchest.24 minecraft:lime_stained_glass_pane{display:{Name:"{\"text\":\"Purchased\",\"italic\":false,\"color\":\"green\"}"}} 1
+replaceitem entity @s[tag=fr_8] enderchest.25 minecraft:lime_stained_glass_pane{display:{Name:"{\"text\":\"Purchased\",\"italic\":false,\"color\":\"green\"}"}} 1
+replaceitem entity @s enderchest.26 barrier{backButton:1b,display:{Name:"{\"text\":\"Back\",\"italic\":false,\"color\":\"dark_red\"}"}} 1
+
+scoreboard players set @s backButton 11
+scoreboard players set @s guiSubP 1
+scoreboard players set @s guiP 5

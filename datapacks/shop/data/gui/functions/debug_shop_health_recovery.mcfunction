@@ -1,1 +1,0 @@
-scoreboard players set @s healthRecovery 0
