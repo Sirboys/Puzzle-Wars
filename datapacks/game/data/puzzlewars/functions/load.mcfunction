@@ -10,5 +10,5 @@ scoreboard objectives add guiCD dummy
 scoreboard objectives add guiItem dummy
 scoreboard objectives add backButton dummy
 
-
-
+scoreboard players set #16 puzzleSettings 16
+setworldspawn 1058 111 1001

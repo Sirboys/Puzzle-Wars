@@ -29,50 +29,33 @@ execute if score GameTime timer matches 26 run tp @a[team=red] 1009.0 102 1023.0
 execute if score GameTime timer matches 26 run tp @a[team=blue] 993.0 102 1023.0 0 0
 execute if score GameTime timer matches 26 run tp @a[team=gray] 976.0 102 1023.0 0 0
 
-execute if score GameTime timer matches 26 as @a[team=red] store result score @s kickCalc run scoreboard players get @s calcScore
-execute if score GameTime timer matches 26 as @a[team=blue] store result score @s kickCalc run scoreboard players get @s calcScore
-execute if score GameTime timer matches 26 as @a[team=yellow] store result score @s kickCalc run scoreboard players get @s calcScore
-execute if score GameTime timer matches 26 as @a[team=green] store result score @s kickCalc run scoreboard players get @s calcScore
-execute if score GameTime timer matches 26 as @a[team=gray] store result score @s kickCalc run scoreboard players get @s calcScore
-execute if score GameTime timer matches 26 as @a[team=black] store result score @s kickCalc run scoreboard players get @s calcScore
-execute if score GameTime timer matches 26 as @a[team=pink] store result score @s kickCalc run scoreboard players get @s calcScore
-execute if score GameTime timer matches 26 as @a[team=white] store result score @s kickCalc run scoreboard players get @s calcScore
+#execute if score GameTime timer matches 26 as @a[team=red] store result score @s kickCalc run scoreboard players get @s calcScore
+#execute if score GameTime timer matches 26 as @a[team=blue] store result score @s kickCalc run scoreboard players get @s calcScore
+#execute if score GameTime timer matches 26 as @a[team=yellow] store result score @s kickCalc run scoreboard players get @s calcScore
+#execute if score GameTime timer matches 26 as @a[team=green] store result score @s kickCalc run scoreboard players get @s calcScore
+#execute if score GameTime timer matches 26 as @a[team=gray] store result score @s kickCalc run scoreboard players get @s calcScore
+#execute if score GameTime timer matches 26 as @a[team=black] store result score @s kickCalc run scoreboard players get @s calcScore
+#execute if score GameTime timer matches 26 as @a[team=pink] store result score @s kickCalc run scoreboard players get @s calcScore
+#execute if score GameTime timer matches 26 as @a[team=white] store result score @s kickCalc run scoreboard players get @s calcScore
 
 execute if score GameTime timer matches 26 run function puzzlewars:calculate
 execute if score GameTime timer matches 26 run function puzzlewars:addcoinsingame
-execute if score GameTime timer matches 26 run function puzzlewars:calculatewrontpuzzles
+#execute if score GameTime timer matches 26 as @a run tellraw @a [{"score":{"name":"@s","objective":"wrong"}}]
+#execute if score GameTime timer matches 26 as @a run tellraw @a [{"score":{"name":"@s","objective":"calcScore"}}]
+execute if score GameTime timer matches 26 as @a run scoreboard players operation @s wrong = #16 puzzleSettings
+execute if score GameTime timer matches 26 as @a run scoreboard players operation @s wrong -= @s calcScore
 execute if score GameTime timer matches 26 as @a[tag=InGame] unless score @s wrong matches 0..1 run tellraw @s ["",{"text":"["},{"text":"Puzzle Wars","color":"dark_purple"},{"text":"]"},{"text":" ","color":"dark_green"},{"score":{"name":"@s","objective":"wrong"},"color":"green"},{"text":" ","color":"dark_green"},{"text":"pieces mismatched,","color":"gold"},{"text":" "},{"score":{"name":"@s","objective":"wrong"},"color":"green"},{"text":" "},{"text":"lives lost!","color":"gold"}]
-execute if score GameTime timer matches 26 as @a[tag=InGame] unless score @s wrong matches 0 if score @s wrong matches 1 run tellraw @s ["",{"text":"["},{"text":"Puzzle Wars","color":"dark_purple"},{"text":"]"},{"text":" ","color":"dark_green"},{"score":{"name":"@s","objective":"wrong"},"color":"green"},{"text":" ","color":"dark_green"},{"text":"pieces mismatched,","color":"gold"},{"text":" "},{"score":{"name":"@s","objective":"wrong"},"color":"green"},{"text":" "},{"text":"life lost!","color":"gold"}]
+execute if score GameTime timer matches 26 as @a[tag=InGame] if score @s wrong matches 1 run tellraw @s ["",{"text":"["},{"text":"Puzzle Wars","color":"dark_purple"},{"text":"]"},{"text":" ","color":"dark_green"},{"score":{"name":"@s","objective":"wrong"},"color":"green"},{"text":" ","color":"dark_green"},{"text":"pieces mismatched,","color":"gold"},{"text":" "},{"score":{"name":"@s","objective":"wrong"},"color":"green"},{"text":" "},{"text":"life lost!","color":"gold"}]
 
 execute if score GameTime timer matches 26 run function puzzlewars:boost/hpback
 execute if score GameTime timer matches 26 run function puzzlewars:kickplayer
 scoreboard players set player$InGame kickCalc 0
 
-execute as @a[team=red] run scoreboard players add player$InGame kickCalc 1
-execute as @a[team=blue] run scoreboard players add player$InGame kickCalc 1
-execute as @a[team=yellow] run scoreboard players add player$InGame kickCalc 1
-execute as @a[team=green] run scoreboard players add player$InGame kickCalc 1
-execute as @a[team=gray] run scoreboard players add player$InGame kickCalc 1
-execute as @a[team=pink] run scoreboard players add player$InGame kickCalc 1
-execute as @a[team=black] run scoreboard players add player$InGame kickCalc 1
-execute as @a[team=white] run scoreboard players add player$InGame kickCalc 1
-
-
-tag @a remove InGame
-tag @a[team=red] add InGame
-tag @a[team=blue] add InGame
-tag @a[team=yellow] add InGame
-tag @a[team=green] add InGame
-tag @a[team=pink] add InGame
-tag @a[team=white] add InGame
-tag @a[team=black] add InGame
-tag @a[team=gray] add InGame
+execute as @a[tag=InGame] run scoreboard players add player$InGame kickCalc 1
 
 execute as @a if entity @s[tag=InGame] if score GameTime timer matches 26 if score player$InGame kickCalc matches 1 if score testGame puzzleSettings matches 0 run scoreboard players add @s Coins 100
 execute as @a if entity @s[tag=InGame] if score GameTime timer matches 26 if score player$InGame kickCalc matches 1 if score testGame puzzleSettings matches 0 run tellraw @s ["",{"text":"["},{"text":"Puzzle Wars","color":"dark_purple"},{"text":"] "},{"text":"+100 Coins (for victory)","color":"gold"}]
 execute as @a if entity @s[tag=InGame] if score GameTime timer matches 26 if score player$InGame kickCalc matches 1 if score testGame puzzleSettings matches 0 run scoreboard players add @s Wins 1
-
-
 
 execute if entity @a[team=red] if score GameTime timer matches 26 if score player$InGame kickCalc matches 1 if score testGame puzzleSettings matches 0 run tellraw @a ["",{"text":"["},{"text":"Puzzle Wars","color":"dark_purple"},{"text":"] "},{"selector":"@p[team=red]","color":"white"},{"text":" ","color":"white"},{"text":"won the game!","color":"gold"}]
 execute if entity @a[team=blue] if score GameTime timer matches 26 if score player$InGame kickCalc matches 1 if score testGame puzzleSettings matches 0 run tellraw @a ["",{"text":"["},{"text":"Puzzle Wars","color":"dark_purple"},{"text":"] "},{"selector":"@p[team=blue]","color":"white"},{"text":" ","color":"white"},{"text":"won the game!","color":"gold"}]
@@ -89,7 +72,7 @@ execute if score GameTime timer matches 26 if score player$InGame kickCalc match
 execute if score GameTime timer matches 26 if score player$InGame kickCalc matches 0..1 if score testGame puzzleSettings matches 0 run function puzzlewars:setdefaultframes
 execute if score GameTime timer matches 26 if score player$InGame kickCalc matches 0 if score testGame puzzleSettings matches 1 run function puzzlewars:setdefaultframes
 
-execute as @a unless score @s coinsInGame matches -10.. run scoreboard players set @s coinsInGame 0
+execute as @a unless score @s coinsInGame matches -1.. run scoreboard players set @s coinsInGame 0
 
 execute if score GameTime timer matches 26 if score player$InGame kickCalc matches 0..1 if score testGame puzzleSettings matches 0 as @a[tag=!inView] unless score @s coinsInGame matches 0 run tellraw @s ["",{"text":"["},{"text":"Puzzle Wars","color":"dark_purple"},{"text":"] "},{"text":"+","color":"gold"},{"score":{"name":"@s","objective":"coinsInGame"},"color":"gold"},{"text":" Coins!","color":"gold"}]
 execute if score GameTime timer matches 26 if score player$InGame kickCalc matches 0 if score testGame puzzleSettings matches 1 as @a[tag=!inView] unless score @s coinsInGame matches 0 run tellraw @s ["",{"text":"["},{"text":"Puzzle Wars","color":"dark_purple"},{"text":"] "},{"text":"+","color":"gold"},{"score":{"name":"@s","objective":"coinsInGame"},"color":"gold"},{"text":" Coins!","color":"gold"}]

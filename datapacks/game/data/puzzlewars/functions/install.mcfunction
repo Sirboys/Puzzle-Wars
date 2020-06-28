@@ -1,3 +1,4 @@
+
 team add red
 team add blue
 team add yellow
@@ -52,18 +53,4 @@ scoreboard objectives add hpBackLevel dummy
 scoreboard objectives add changePictrue minecraft.dropped:minecraft.painting
 scoreboard objectives add playerBlindess minecraft.dropped:minecraft.ink_sac
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+say Puzzle Wars is added

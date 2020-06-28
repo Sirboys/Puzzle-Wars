@@ -1,1 +1,5 @@
-{"values": ["puzzlewars:load"]}
+{
+  "values": [
+    "puzzlewars:load"
+  ]
+}
