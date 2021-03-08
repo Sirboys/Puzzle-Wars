@@ -4,6 +4,7 @@ gamemode adventure @a[scores={ReJoin=1..}]
 tp @a[tag=!newPlayer] 1058 111 1001 90 16
 tp @a[scores={ReJoin=1..}] 1058 111 1001 90 16
 
+execute as @e[type=minecraft:item_frame] run data merge entity @s {Invulnerable:1b}
 
 clear @a[tag=!newPlayer]
 clear @a[scores={ReJoin=1..}]
